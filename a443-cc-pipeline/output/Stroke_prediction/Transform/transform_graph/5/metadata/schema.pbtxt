@@ -1,0 +1,276 @@
+feature {
+  name: "age"
+  type: INT
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "alcohol_intake"
+  type: BYTES
+  domain: "alcohol_intake"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "average_glucose_level"
+  type: FLOAT
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "body_mass_index_(bmi)"
+  type: FLOAT
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "diagnosis"
+  type: INT
+  bool_domain {
+  }
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "dietary_habits"
+  type: BYTES
+  domain: "dietary_habits"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "gender"
+  type: BYTES
+  domain: "gender"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "heart_disease"
+  type: INT
+  bool_domain {
+  }
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "hypertension"
+  type: INT
+  bool_domain {
+  }
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "marital_status"
+  type: BYTES
+  domain: "marital_status"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "physical_activity"
+  type: BYTES
+  domain: "physical_activity"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "residence_type"
+  type: BYTES
+  domain: "residence_type"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "smoking_status"
+  type: BYTES
+  domain: "smoking_status"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "stress_levels"
+  type: FLOAT
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "stroke_history"
+  type: INT
+  bool_domain {
+  }
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "work_type"
+  type: BYTES
+  domain: "work_type"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+string_domain {
+  name: "alcohol_intake"
+  value: "Frequent Drinker"
+  value: "Never"
+  value: "Rarely"
+  value: "Social Drinker"
+}
+string_domain {
+  name: "dietary_habits"
+  value: "Gluten-Free"
+  value: "Keto"
+  value: "Non-Vegetarian"
+  value: "Paleo"
+  value: "Pescatarian"
+  value: "Vegan"
+  value: "Vegetarian"
+}
+string_domain {
+  name: "gender"
+  value: "Female"
+  value: "Male"
+}
+string_domain {
+  name: "marital_status"
+  value: "Divorced"
+  value: "Married"
+  value: "Single"
+}
+string_domain {
+  name: "physical_activity"
+  value: "High"
+  value: "Low"
+  value: "Moderate"
+}
+string_domain {
+  name: "residence_type"
+  value: "Rural"
+  value: "Urban"
+}
+string_domain {
+  name: "smoking_status"
+  value: "Currently Smokes"
+  value: "Formerly Smoked"
+  value: "Non-smoker"
+}
+string_domain {
+  name: "work_type"
+  value: "Government Job"
+  value: "Never Worked"
+  value: "Private"
+  value: "Self-employed"
+}
